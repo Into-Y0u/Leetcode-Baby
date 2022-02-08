@@ -1,0 +1,21 @@
+
+class Solution:
+    def LongestBitonicSequence(self, arr):
+        # Code here
+        n = len(arr)
+        forward = [1 for i in range(n)]
+        backward = [1 for i in range(n)]
+        for  i in range(n):
+            for j in range(i) :
+                if arr[i] > arr[j] :
+                    forward[i] = max(forward[i] , 1 + forward[j])
+        
+        for i in range(n-1 , -1 , -1 ):
+            for j in range(n-1 , i , -1) :
+                if arr[i] > arr[j] :
+                    backward[i] = max(backward[i] , 1 +  backward[j])
+        
+        ans = 0 
+        for i in range(n) :
+            ans = max(ans , forward[i] + backward[i] - 1 )
+        return ans
