@@ -1,5 +1,5 @@
 
-[![MasterHead](https://www.wallpaperflare.com/spider-man-film-emma-stone-peter-parker-andrew-garfield-wallpaper-tytqg/)
+[![MasterHead](https://github.com/Into-Y0u/Leetcode-Baby/blob/0c0b8209b447e10d86bde586335b0c326a11ece6/wallpaperflare-cropped.jpg)
 
 
 # LeetCode Solves
