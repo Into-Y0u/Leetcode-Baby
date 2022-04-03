@@ -1,31 +1,27 @@
 class Solution:
-    def nextPermutation(self, arr: List[int]) -> None:
-        n = len(arr)
-        i = n-1 ; f = 0
-        while i> 0 :
-            if arr[i] > arr[i-1] :
-                f = 1
+    def nextPermutation(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        n = len(nums)
+        i = n-1 
+        while i > 0 :
+            if nums[i] > nums[i-1] :
                 break
             i-=1
-        # print(f)
-        if f :
-            
-            # lowest of part 2 array swapping with break point target
-            for j in range(n-1,i-2,-1):
-                if arr[j] > arr[i-1] :
-                    arr[i-1] , arr[j] = arr[j] , arr[i-1]
-                    break
-            l = n-1
-            j = i
-            
-            # simple sorting the rest array
-            while j < l :
-                arr[j],arr[l] = arr[l] , arr[j]
-                l-=1
-                j+=1
+        if i == 0 :
+            nums.reverse()
+            return nums 
+        
+        brk_point  = i-1
+        for j in range(i,n-1):
+            for k in range(j,n):
+                if nums[j] > nums[k] :
+                    nums[j],nums[k] = nums[k],nums[j]
+        # print(nums)
+        for i in range(brk_point,n):
+            if nums[brk_point] < nums[i]:
+                nums[brk_point] , nums[i] = nums[i] ,nums[brk_point] 
+                break
+        return nums
                 
-
-            return arr
-        else :
-            arr.reverse()
-            return arr
