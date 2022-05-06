@@ -5,8 +5,8 @@ Also suggestions are accepted
 
 ### Parenthesis problem:-
 
-- [X] 1. [generate-parentheses](https://leetcode.com/problems/generate-parentheses)
-- [X] 2. [score-of-parentheses](https://leetcode.com/problems/score-of-parentheses)
+- [x] 1. [generate-parentheses](https://leetcode.com/problems/generate-parentheses)
+- [x] 2. [score-of-parentheses](https://leetcode.com/problems/score-of-parentheses)
 - [ ] 3. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
 - [ ] 4. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
 - [ ] 5. [remove-outermost-parentheses](https://leetcode.com/problems/remove-outermost-parentheses) 
