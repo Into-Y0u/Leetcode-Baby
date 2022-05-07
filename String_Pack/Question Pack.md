@@ -5,11 +5,11 @@ Also suggestions are accepted
 
 ### Parenthesis problem:-
 
-- [x] 1. [generate-parentheses](https://leetcode.com/problems/generate-parentheses)
-- [x] 2. [score-of-parentheses](https://leetcode.com/problems/score-of-parentheses)
-- [ ] 3. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
-- [ ] 4. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
-- [ ] 5. [remove-outermost-parentheses](https://leetcode.com/problems/remove-outermost-parentheses) 
+- [✅] 1. [generate-parentheses](https://leetcode.com/problems/generate-parentheses)
+- [✅] 2. [score-of-parentheses](https://leetcode.com/problems/score-of-parentheses)
+- [✅] 3. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
+- [✅] 4. [valid-parentheses](https://leetcode.com/problems/valid-parentheses)
+- [✅] 5. [remove-outermost-parentheses](https://leetcode.com/problems/remove-outermost-parentheses) 
 - [ ] 6. [different-ways-to-add-parentheses](https://leetcode.com/problems/different-ways-to-add-parentheses/)
 - [ ] 7. [remove-invalid-parentheses](https://leetcode.com/problems/remove-invalid-parentheses) 
 - [ ] 8. [minimum-remove-to-make-valid-parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses)
