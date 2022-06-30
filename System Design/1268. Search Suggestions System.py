@@ -1,10 +1,17 @@
 class Solution:
     def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
         products.sort()
-        n=len(products)
-        indices=[i for i in range(n)]
-        res=[]
-        for idx, c in enumerate(searchWord):
-            indices = [i for i in indices if len(products[i])>idx and products[i][idx] == c]                                                                
-            res.append(products[i] for i in indices[:3])        
-        return res  
+        l,r = 0,len(products)-1 
+        res = []
+        for i in range(len(searchWord)) :
+            c = searchWord[i]
+            while l<=r and (len(products[l]) <= i or products[l][i] != searchWord[i]):
+                l+=1
+                
+            while l<=r and (len(products[r]) <= i or products[r][i] != searchWord[i]):
+                r-=1
+            res.append([])
+            remain = r-l+1
+            for j in range(min(3,remain)):
+                res[-1].append(products[l+j])
+        return res
